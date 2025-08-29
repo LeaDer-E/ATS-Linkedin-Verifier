@@ -163,6 +163,42 @@ def process_files(folder_path, test_mode=False):
 ```
 ---
 
+### For More Security:
+- in `linkedin_checker.py` at the last Function `check_linkedin_profile`:
+```bash
+	def check_linkedin_profile(driver, url):
+    try:
+        driver.get(url)
+        time.sleep(random.uniform(1, 2)) #You Can Change this to time.sleep(random.uniform(2, 4))
+
+        if "linkedin.com/in/" not in driver.current_url.lower():
+            return False, ""
+
+        driver.find_element(By.TAG_NAME, "main")
+        human_scroll(driver)
+
+        try:
+            name_element = WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located(
+                    (By.XPATH, "//h1[contains(@class,'inline t-24 v-align-middle break-words')]")
+                )
+            )
+            name = name_element.text.strip()
+        except TimeoutException:
+            name = ""
+            print("[WARNING] Could not find profile name.")
+
+        # Random small pause to simulate human reading
+        time.sleep(random.uniform(0.5, 1.5)) #You Can Change this to time.sleep(random.uniform(5, 15))
+        return True, name
+
+    except (NoSuchElementException, TimeoutException):
+        return False, ""
+```
+- but that will make the code slowerو You can also distribute the tasks across multiple links to ensure no ban.
+
+
+
 ## Output Files
 All outputs are saved in the `/Status/` folder with timestamped filenames.
 
