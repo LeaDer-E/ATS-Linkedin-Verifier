@@ -1,0 +1,7 @@
+python-docx
+selenium
+openpyxl
+pandas
+undetected_chromedriver
+setuptools
+python3-distutils

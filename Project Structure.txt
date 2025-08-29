@@ -1,0 +1,17 @@
+linkedin_verifier/
+│
+├── Account.py                  # Login credentials (Username, Password)
+├── Main.py                     # Main script to run the program
+│
+├── file_reader.py              # Responsible for reading DOCX files and extracting links and phone numbers
+├── linkedin_checker.py         # Handles LinkedIn login and profile verification using Selenium
+├── output_manager.py           # Displays results and saves them in HTML and Excel formats
+├── utils.py                    # Helper functions like regex patterns or text cleaning
+│
+├── requirements.txt            # Required packages
+└── README.md                   # Usage instructions
+
+
+
+pip install python-docx selenium openpyxl
+python Main.py "C:\path\to\your\folder"
