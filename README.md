@@ -209,8 +209,8 @@ All outputs are saved in the `/Status/` folder with timestamped filenames.
 
 | File Name    | Phone         | Full Path               | Link                                                                   | Folder Name | Name       | Result |
 | ------------ | ------------- | ----------------------- | ---------------------------------------------------------------------- | ----------- | ---------- | ------ |
-| resume1.docx | +966555123456 | C:/Resumes/resume1.docx | [https://linkedin.com/in/johndoe](https://linkedin.com/in/johndoe)     | August2025  | John Doe   | ✔     |
-| resume2.docx | +966555654321 | C:/Resumes/resume2.docx | [https://linkedin.com/in/janesmith](https://linkedin.com/in/janesmith) | August2025  | Jane Smith | ✖     |
+| resume1.docx | +201283447065 | C:/Resumes/resume1.docx | [https://linkedin.com/in/johndoe](https://linkedin.com/in/johndoe)     | August2025  | John Doe   | ✔     |
+| resume2.docx | +201283447065 | C:/Resumes/resume2.docx | [https://linkedin.com/in/janes999](https://linkedin.com/in/janes999)   | August2025  | Jane Smith | ✖     |
 
 - Features:
   - Clickable LinkedIn links (blue & underlined).
@@ -281,3 +281,4 @@ Use under your own responsibility. Adhere to LinkedIn’s Terms of Service.
 
 
 ---
+
